@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="Test Suite" parallel="tests" thread-count="3">
+    <test name= "Tests cases chrome">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="runners.TestFile">
+            </class>
+        </classes>
+    </test>
+    <test name= "Tests cases firefox">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="runners.TestFile">
+            </class>
+        </classes>
+    </test>
+    <test name= "Tests cases safari">
+        <parameter name="browser" value="safari" />
+        <classes>
+            <class name="runners.TestFile">
+            </class>
+        </classes>
+    </test>
+</suite>
